@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    position: relative; 
+    font-weight: 600;
+    color: blue;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Abb.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    z-index: -1;
+}
+.content {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
